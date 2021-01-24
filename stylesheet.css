@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+}
+
+
+. {
+	background-color: #ededed;
+}
+
+
+.page {
+	width: 600px;
+	margin: 0 auto;
+	background-color: #F7F7F7;
+	padding: 0;
+}
+
+a:link {
+	color: green;
+	text-decoration: none;
+}
+
+a:visited {
+	color: green;
+}
+
+a:hover {
+	color: #7FFF00;
+	text-decoration: underline;
+}
+
+a:active {
+	color: aqua;
+	text-decoration: underline;
+}
+a:visited:hover {
+	color: #7FFF00;
+}
+
+a:visited:active {
+       color: #006400;
+}
+
+.header {
+	background-color: #006400;
+	color: #E6E6E6;
+	text-align: center;
+	margin: 0 auto;
+	padding: 20px;
+	border-bottom: 2px solid #005800;
+	
+	height: 50px; 
+}
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow:hidden;
+	background-color: #333; 
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+
+.button {
+	float: left;
+	display: block;
+	text-align: center;
+	color: white;
+	text-decoration: none;
+	width: 200px;
+	background-color: #333;
+	border-right: 1px solid #bbb;
+}
+
+.button:hover {
+	background-color: #cccccc;
+}
+
+.current {
+	background-color: #228B22;
+}
+
+.current:hover {
+	background-color: #228B99;
+}
+
+.button:link {
+	color: white;
+}
