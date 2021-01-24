@@ -2,7 +2,6 @@ body {
 	margin: 0;
 }
 
-
 . {
 	background-color: #ededed;
 }
@@ -16,40 +15,38 @@ body {
 }
 
 a:link {
-	color: green;
+	color: #4682B4; /* Steel blue */
 	text-decoration: none;
 }
 
 a:visited {
-	color: green;
+	color: #4682B4; /* Steel blue */
 }
 
 a:hover {
-	color: #7FFF00;
 	text-decoration: underline;
 }
 
 a:active {
-	color: aqua;
 	text-decoration: underline;
 }
 a:visited:hover {
-	color: #7FFF00;
+	color: #4682B4; /* Steel blue */
 }
 
 a:visited:active {
-       color: #006400;
+       color: #4682B4; /* Steel blue */
 }
 
 .header {
-	background-color: #006400;
-	color: #E6E6E6;
+	background-color: #4682B4; /* Steel blue */
+	color: #E6E6E6; /* white */
 	text-align: center;
 	margin: 0 auto;
 	padding: 20px;
-	border-bottom: 2px solid #005800;
-	
-	height: 50px; 
+	border-bottom: 2px solid #E6E6E6; /* White */
+
+	height: 50px;
 }
 
 .navigation {
@@ -57,35 +54,45 @@ a:visited:active {
 	margin: 0;
 	padding: 0;
 	overflow:hidden;
-	background-color: #333; 
-	position: fixed;
-	top: 0;
+	background-color: #708090; /* Slate Gray */
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 	width: 100%;
 }
 
 .button {
 	float: left;
-	display: block;
-	text-align: center;
+	border-right: 1px solid #bbb; /* Light gray */
 	color: white;
-	text-decoration: none;
-	width: 200px;
-	background-color: #333;
-	border-right: 1px solid #bbb;
+}
+
+
+a {
+	display: block;
+  padding: 8px;
+	color: white;
+}
+
+.button:link,
+.button:visited,
+.button:hover,
+.button:active,
+.button:visited:active,
+.button:visited:hover {
+	color:white;
 }
 
 .button:hover {
-	background-color: #cccccc;
+	background-color: #7a8a9a; /* Slightly Lighter Slate Gray */
 }
 
-.current {
-	background-color: #228B22;
-}
-
-.current:hover {
-	background-color: #228B99;
-}
-
-.button:link {
-	color: white;
+.current,
+.current:visited,
+.current:active,
+.current:link,
+.current:hover,
+.current:visited:hover,
+.current:visited:active {
+	background-color: #4682B4;   /*Steel Blue */
 }
