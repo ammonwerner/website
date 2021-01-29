@@ -55,7 +55,7 @@ a:visited:active {
 	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	overflow:hidden;
+	overflow: hidden;
 	background-color: #708090; /* Slate Gray */
 	position: -webkit-sticky; /* Safari */
   position: sticky;
