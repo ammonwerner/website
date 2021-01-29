@@ -86,6 +86,12 @@ a {
   height: 600px;
 }
 
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4 {
+  width: 25%
+}
 
 /*mobile style*/
 @media only screen and (max-width: 400px) {
@@ -100,6 +106,12 @@ h1 {
     flex-direction: column;
   }
 
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4 {
+    width: 75%
+  }
 
 }
 
@@ -116,6 +128,13 @@ h1 {
   .section {
     flex-direction: column;
   }
+
+  .feature-1,
+  .feature-2,
+  .feature-3,
+  .feature-4 {
+    width: 50%
+  }
 }
 
 /* Desktop Styles */
@@ -129,5 +148,12 @@ h1 {
     }
     .content {
       order: 2;
+    }
+
+    .feature-1,
+    .feature-2,
+    .feature-3,
+    .feature-4 {
+      width: 25%
     }
 }
