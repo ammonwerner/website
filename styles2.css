@@ -18,12 +18,63 @@
 }
 
 .menu {
-  background-color: #b299e6; /*  75% Medium Purple */
+  background-color: #b299e6;   /* 75% Medium Purple */
+
+  /* #b299e6;   75% Medium Purple */
+
   height: 80px;
   justify-content: flex-end;
   padding-right: 10px;
   color: white;
 }
+
+.navigation {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #708090; /* Slate Gray */
+	position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+	width: 100%;
+}
+
+.button {
+	float: left;
+	color: white;
+  width: 16.666666667%;
+}
+
+a {
+	display: block;
+  padding: 8px;
+	color: white;
+}
+
+.button:link,
+.button:visited,
+.button:hover,
+.button:active,
+.button:visited:active,
+.button:visited:hover {
+	color: white;
+}
+
+.button:hover {
+	background-color: #white;
+}
+
+.current,
+.current:visited,
+.current:active,
+.current:link,
+.current:hover,
+.current:visited:hover,
+.current:visited:active {
+	background-color: #b1a7bc; /* Sage Green */
+}
+
 
 .header {
   background-color: #b1d0b1; /* Sage Green */
@@ -35,37 +86,36 @@
   height: 600px;
 }
 
-.sign-up {
-  background-color: #D6E9FE;
-}
-
-.feature-1 {
-  background-color: #F5CF8E;
-}
-
-.feature-2 {
-  background-color: #F09A9D;
-}
-
-.feature-3 {
-  background-color: #C8C6FA;
-}
-
-
 
 /*mobile style*/
 @media only screen and (max-width: 400px) {
+* {
+  font-size: .9em;
+}
+
+h1 {
+  font-size: 1.9em;
+}
+  .section {
+    flex-direction: column;
+  }
+
 
 }
 
 /*Tablet styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .sign-up,
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 50%;
-    }
+  * {
+    font-size: .95em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .section {
+    flex-direction: column;
+  }
 }
 
 /* Desktop Styles */
@@ -74,17 +124,8 @@
       width: 960px;
       margin: 0 auto;
     }
-    .feature-1,
-    .feature-2,
-    .feature-3 {
-      width: 33.3%;
-    }
     .header {
       height: 400px;
-    }
-    .sign-up {
-      height: 200px;
-      order: 1;
     }
     .content {
       order: 2;
